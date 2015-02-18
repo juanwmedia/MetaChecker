@@ -1,0 +1,24 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+"#label": {
+	font: {
+		fontSize: 12
+	}
+}
+"MenuItem": {
+    showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
+},
+"#item1": {
+    icon: Ti.Android.R.drawable.ic_menu_preferences
+},
+"#item2": {
+    icon: Ti.Android.R.drawable.ic_menu_search
+},

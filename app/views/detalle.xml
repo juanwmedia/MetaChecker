@@ -1,0 +1,25 @@
+<Alloy>
+	<Window class="container" title="{juego.name}">
+		<ActionBar platform="android" displayHomeAsUp="true" onHomeIconItemSelected="cerrarVentana" />
+		<ScrollView >
+			<View id="cabecera">
+				<ImageView id="poster" image="{juego.thumbnail}"/>
+				<View id="informacion" >
+					<Label class="titulo" text="{juego.name}"></Label>
+					<Label class="generico" text="{juego.genre}"></Label>
+					<Label class="generico" text="{juego.developer}"></Label>
+					<Label class="generico" text="{juego.publisher}"></Label>
+					<Label class="generico" text="{juego.rlsdate}"></Label>
+				</View>
+			</View>
+			<View id="cuerpo">
+				<Label top="15">Valoración usuario:</Label>
+				<Label class="valoracion-usuario" text="{juego.userscore}"></Label>
+				<Label top="5">Crítica:</Label>
+				<Label class="valoracion" text="{juego.score}"></Label>
+				<Label class="argumento" text="{juego.summary}"></Label>
+				<Label class="generico" text="{juego.url}"></Label>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

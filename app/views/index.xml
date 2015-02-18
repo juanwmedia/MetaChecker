@@ -1,0 +1,9 @@
+<Alloy>
+    <Window class="container" title="Metacritic Checker">
+        <TableView id="list" dataCollection="listaJuegos" dataTransform="transformarModelo" onClick="mostrarDetalle">
+        	<SearchBar id="searchBar" platform="ios"/>
+        	<SearchView id="searchView" ns="Ti.UI.Android" platform="android" backgroundColor="black" />
+            <Require src="fila"></Require>
+        </TableView>
+    </Window>
+</Alloy>

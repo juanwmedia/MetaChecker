@@ -1,0 +1,13 @@
+".container" : {
+	height: 50,
+}
+
+"#titulo" : {
+    textAlign: "left",
+    left : "5dp"
+} 
+
+
+"Label[platform=android]": {
+	color: "black"
+}

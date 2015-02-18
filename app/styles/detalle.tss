@@ -1,0 +1,76 @@
+"ScrollView": {
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: "vertical",
+ 	layout: "vertical"
+}
+
+"Label": {
+	left: 5,
+	font: {
+		fontSize: 13
+	}
+}
+	"Label[platform=android]": {
+		color: "black"
+	}
+	
+".container" : {
+  backgroundColor: 'white',
+}
+
+"#cabecera": {
+	height: "30%",
+	layout: "horizontal"
+}
+
+"#poster": {
+	width: "40%",
+	top: 5,
+	image: "/appicon.png",
+}
+
+"#informacion": {
+	layout: "vertical"
+} 
+	"#informacion[platform=android]": {
+		width: "50%",
+	}
+
+".titulo": { 
+	font: {
+		fontSize: 18,
+		fontWeight: "bold"
+	}
+}
+
+".valoracion-usuario": {
+	font: {
+		fontSize: 34,
+		fontWeight: "bold"
+	}
+}
+".valoracion": {
+	font: {
+		fontSize: 24,
+		fontWeight: "bold"
+	}
+}
+
+"#cuerpo": {
+	height: Titanium.UI.FILL,
+	layout: "vertical"
+}
+
+".argumento": {
+	top: 5,
+	font: {
+		fontSize: 12,
+		fontWeight: "bold"
+	}
+}
+".generico": {
+	top: 5,
+	autoLink: Titanium.UI.AUTOLINK_URLS,
+	width: "95%"
+}
