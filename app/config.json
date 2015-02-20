@@ -1,6 +1,6 @@
 {
   "global": {
-    "apiKey": "Crea una cuenta gratuita en https://www.mashape.com/ para obtener la key :)"
+    "apiKey": ""
   },
   "env:development": {},
   "env:test": {},
