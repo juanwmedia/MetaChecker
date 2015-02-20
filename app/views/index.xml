@@ -1,9 +1,30 @@
 <Alloy>
-    <Window class="container" title="Metacritic Checker">
-        <TableView id="list" dataCollection="listaJuegos" dataTransform="transformarModelo" onClick="mostrarDetalle">
-        	<SearchBar id="searchBar" platform="ios"/>
-        	<SearchView id="searchView" ns="Ti.UI.Android" platform="android" backgroundColor="black" />
-            <Require src="fila"></Require>
-        </TableView>
-    </Window>
+	<Window class="container" title="Metacritic Checker">
+		
+		<ActionBar platform="android" title="Metacritic Checker"/>
+		<Menu>
+			<MenuItem title="Plataforma" onClick="mostrarOpciones"/>
+		</Menu>
+		
+		<RightNavButton platform="ios">
+			<Button title="Plataforma" onClick="mostrarOpciones" />
+		</RightNavButton>
+		
+		<OptionDialog id="cambiarPlataforma" title="Elegir plataforma">
+			<Options>
+				<Option>PC</Option>
+				<Option>Xbox 360</Option>
+				<Option>Xbox ONE</Option>
+				<Option>PlayStation 3</Option>
+				<Option>PlayStation 4</Option>
+			</Options>
+		</OptionDialog>
+		
+		<TableView id="list" dataCollection="listaJuegos" dataTransform="transformarModelo" onClick="mostrarDetalle">
+			<SearchBar id="searchBar" platform="ios"/>
+			<SearchView id="searchView" ns="Ti.UI.Android" platform="android" backgroundColor="black" />
+			<Require src="fila"></Require>
+		</TableView>
+		
+	</Window>
 </Alloy>

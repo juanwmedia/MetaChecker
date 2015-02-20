@@ -1,8 +1,8 @@
 // Consultas a la API REST para los juegos de Metacritic
-exports.obtenerJuegos = function(_callback) {
+exports.obtenerJuegos = function(_callback, plataforma) {
 	// Ajax http://www.w3schools.com/ajax/ajax_xmlhttprequest_create.asp
 	var xhr = Ti.Network.createHTTPClient();
-	var url = "https://byroredux-metacritic.p.mashape.com/game-list/pc/new-releases";
+	var url = "https://byroredux-metacritic.p.mashape.com/game-list/" + plataforma + "/new-releases";
 	xhr.onload = function() {
 		var data = JSON.parse(xhr.responseText);
 		_callback(data.results);
@@ -30,7 +30,7 @@ exports.obtenerJuego = function(titulo, _callback) {
 	xhr.open("POST", url);
 	xhr.setRequestHeader("X-Mashape-Authorization", Alloy.CFG.apiKey);
 	xhr.send({
-		platform: 3, // PC
+		platform: Alloy.Globals.plataformaActiva,
 		title: titulo
 	});
 };

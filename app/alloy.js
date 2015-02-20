@@ -9,6 +9,13 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
+// NavigationWindow global
+Alloy.Globals.navWin;
+
+// Plataforma activa 
+Alloy.Globals.plataformaActiva = 3; // PC
+
 Alloy.Globals.loading = Alloy.createWidget("nl.fokkezb.loading");
 // Creamos la colección de juegos.
 Alloy.Models.juego = new Backbone.Model();

@@ -1,6 +1,6 @@
 <Alloy>
-	<Window class="container" title="{juego.name}">
-		<ActionBar platform="android" displayHomeAsUp="true" onHomeIconItemSelected="cerrarVentana" />
+	<Window class="container" title="MetaCritic Checker">
+		<ActionBar platform="android" title="MetaCritic Checker" displayHomeAsUp="true" onHomeIconItemSelected="cerrarVentana" />
 		<ScrollView >
 			<View id="cabecera">
 				<ImageView id="poster" image="{juego.thumbnail}"/>
