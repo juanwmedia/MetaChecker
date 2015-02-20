@@ -3,6 +3,8 @@ Pequeña App en Titanium Alloy que consulta una API REST no oficial de MetaCriti
 
 Un montón de cosas por hacer.
 
-+ Cambio entre plataformas.
++ ~~Cambio entre plataformas.~~
 + Buscar juegos de forma individual.
++ Mejorar el diseño.
++ Refactorizar el código.
 + Etc...
